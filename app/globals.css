@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+/*
+ * YourwAI Design System — Tailwind v4 theme tokens
+ * Source of truth: design-rules.md
+ * Every value here maps 1:1 to a design-rules.md specification.
+ */
+
+@theme {
+  /* ── Colors (design-rules.md §3) ── */
+  --color-primary: #6c8ea4;
+  --color-primary-dark: #4a6f87;
+  --color-primary-hover: #3d5f74;
+  --color-primary-active: #345268;
+
+  --color-accent: #c88a8a;
+  --color-accent-dark: #b07070;
+
+  --color-text: #1e293b;
+  --color-text-muted: #64748b;
+
+  --color-background: #faf8f6;
+  --color-surface: #f5f0ec;
+  --color-border: #e8e4e0;
+
+  --color-success: #7a9e8e;
+  --color-error: #c75050;
+  --color-white: #ffffff;
+
+  /* ── Font families (design-rules.md §2) ── */
+  --font-heading: var(--font-heebo), system-ui, -apple-system, sans-serif;
+  --font-body: var(--font-heebo), system-ui, -apple-system, sans-serif;
+
+  /* ── Type scale — desktop (design-rules.md §2) ── */
+  --text-h1: 3rem;              /* 48px */
+  --text-h1--line-height: 1.2;
+  --text-h1--letter-spacing: -0.02em;
+
+  --text-h2: 2.25rem;           /* 36px */
+  --text-h2--line-height: 1.25;
+  --text-h2--letter-spacing: -0.01em;
+
+  --text-h3: 1.5rem;            /* 24px */
+  --text-h3--line-height: 1.3;
+
+  --text-h4: 1.25rem;           /* 20px */
+  --text-h4--line-height: 1.35;
+
+  --text-body: 1.0625rem;       /* 17px */
+  --text-body--line-height: 1.7;
+  --text-body--letter-spacing: 0.01em;
+
+  --text-body-lg: 1.1875rem;    /* 19px */
+  --text-body-lg--line-height: 1.65;
+  --text-body-lg--letter-spacing: 0.01em;
+
+  --text-caption: 0.875rem;     /* 14px */
+  --text-caption--line-height: 1.5;
+  --text-caption--letter-spacing: 0.02em;
+
+  --text-button: 1rem;          /* 16px */
+  --text-button--line-height: 1;
+  --text-button--letter-spacing: 0.03em;
+
+  --text-nav: 0.9375rem;        /* 15px */
+  --text-nav--line-height: 1;
+  --text-nav--letter-spacing: 0.02em;
+
+  /* ── Border radius (design-rules.md §5) ── */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* ── Shadows (design-rules.md §5) ── */
+  --shadow-subtle: 0 1px 3px rgba(30, 41, 59, 0.06);
+  --shadow-medium: 0 4px 12px rgba(30, 41, 59, 0.08);
+  --shadow-rose: 0 4px 16px rgba(200, 138, 138, 0.12);
+  --shadow-rose-lg: 0 8px 24px rgba(200, 138, 138, 0.16);
+
+  /* ── Spacing scale (design-rules.md §4 — canonical values) ── */
+  --spacing-xs: 0.25rem;   /*  4px */
+  --spacing-sm: 0.5rem;    /*  8px */
+  --spacing-md: 1rem;      /* 16px */
+  --spacing-lg: 1.5rem;    /* 24px */
+  --spacing-xl: 2rem;      /* 32px */
+  --spacing-2xl: 3rem;     /* 48px */
+  --spacing-3xl: 4rem;     /* 64px */
+  --spacing-4xl: 6rem;     /* 96px */
+
+  /* ── Breakpoints (design-rules.md §8) ── */
+  --breakpoint-sm: 640px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1200px;
+
+  /* ── Transitions (design-rules.md §7) ── */
+  --animate-fade-in: fade-in-up 400ms ease-out both;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subtle botanical image drift — "breathing" effect */
+@keyframes gentle-drift {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+/* ── Base layer ── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-weight: 300; /* Light — design-rules.md §2 */
+    color: var(--color-text);
+    background-color: var(--color-background);
+  }
+
+  /* RTL/LTR handled via dir attribute on <html> — design-rules.md §9 */
+  [dir="rtl"] {
+    text-align: right;
+  }
+  [dir="ltr"] {
+    text-align: left;
+  }
+
+  /* Hebrew body text: slightly tighter line-height — design-rules.md §2 note */
+  [lang="he"] body {
+    line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+    font-weight: 600; /* Semi Bold */
+    font-family: var(--font-heading);
+  }
+
+  h4 {
+    font-weight: 500; /* Medium */
+    font-family: var(--font-heading);
+  }
+
+  a {
+    color: var(--color-primary-dark);
+    transition: color 200ms ease;
+  }
+  a:hover {
+    color: var(--color-primary);
+  }
+
+  /* Focus ring — design-rules.md §3 semantic colors */
+  :focus-visible {
+    outline: 2px solid color-mix(in srgb, var(--color-primary) 40%, transparent);
+    outline-offset: 2px;
+  }
+}
+
+/* ── Utility classes for section alternation (design-rules.md §3) ── */
+/* Sections alternate #faf8f6 ↔ #f5f0ec strictly in page order. */
+/* Apply .section-alt to every even-numbered section (2nd, 4th, …). */
+@layer utilities {
+  .section-alt {
+    background-color: var(--color-surface);
+  }
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 140" fill="currentColor">
+  <!-- Stem -->
+  <path d="M30 140 Q28 100 30 0" fill="none" stroke="#4a4040" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Leaves right -->
+  <path d="M30 25 Q50 15 55 25 Q55 35 30 35Z" opacity="0.9"/>
+  <path d="M30 50 Q55 38 58 50 Q56 62 30 60Z" opacity="0.85"/>
+  <path d="M30 75 Q52 65 55 77 Q53 88 30 85Z" opacity="0.8"/>
+  <path d="M30 100 Q48 92 50 102 Q48 112 30 108Z" opacity="0.75"/>
+  <!-- Leaves left -->
+  <path d="M30 38 Q10 28 5 38 Q7 48 30 47Z" opacity="0.87"/>
+  <path d="M30 63 Q8 53 4 65 Q6 76 30 72Z" opacity="0.82"/>
+  <path d="M30 88 Q12 78 8 90 Q10 100 30 95Z" opacity="0.77"/>
+</svg>
