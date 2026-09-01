@@ -3,6 +3,7 @@ import Image from "next/image";
 interface HeroSectionProps {
   headline: string;
   subheadline: string;
+  byline: string;
   locale: "he" | "en";
 }
 
@@ -12,6 +13,7 @@ interface HeroSectionProps {
 export function HeroSection({
   headline,
   subheadline,
+  byline,
   locale,
 }: HeroSectionProps) {
   return (
@@ -24,6 +26,9 @@ export function HeroSection({
           </h1>
           <p className="text-body-lg font-light text-text max-w-[540px]">
             {subheadline}
+          </p>
+          <p className="text-caption font-light text-text-muted tracking-wide">
+            {byline}
           </p>
         </div>
 

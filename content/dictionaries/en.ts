@@ -37,6 +37,7 @@ const en = {
     subheadline:
       "You don't need to become an AI expert. You need someone who understands your workflows and builds the right tools for them.",
     cta: "Get in touch",
+    byline: "Alexandra Zilman · AI Adoption Consultant",
     photoAlt: "Alexandra Zilman, AI adoption consultant",
   },
 

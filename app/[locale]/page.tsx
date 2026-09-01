@@ -23,6 +23,7 @@ export default async function HomePage({ params }: PageProps) {
       <HeroSection
         headline={t("hero.headline")}
         subheadline={t("hero.subheadline")}
+        byline={t("hero.byline")}
         locale={loc}
       />
 
