@@ -4,6 +4,7 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { ServicesPreview } from "@/components/sections/ServicesPreview";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { ProcessSection } from "@/components/sections/ProcessSection";
+import { AudienceSection } from "@/components/sections/AudienceSection";
 import { SectionDivider } from "@/components/decorative/SectionDivider";
 
 interface PageProps {
@@ -23,6 +24,13 @@ export default async function HomePage({ params }: PageProps) {
         headline={t("hero.headline")}
         subheadline={t("hero.subheadline")}
         locale={loc}
+      />
+
+      <SectionDivider />
+
+      <AudienceSection
+        heading={t("audience.heading")}
+        body={t("audience.body")}
       />
 
       <SectionDivider />

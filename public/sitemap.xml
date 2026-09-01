@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Hebrew (primary) -->
+  <url>
+    <loc>https://yourwai.com/he</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://yourwai.com/he"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yourwai.com/en"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://yourwai.com/he/about</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://yourwai.com/he/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yourwai.com/en/about"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourwai.com/he/services</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://yourwai.com/he/services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yourwai.com/en/services"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourwai.com/he/contact</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://yourwai.com/he/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yourwai.com/en/contact"/>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- English -->
+  <url>
+    <loc>https://yourwai.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://yourwai.com/he"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yourwai.com/en"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://yourwai.com/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://yourwai.com/he/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yourwai.com/en/about"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourwai.com/en/services</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://yourwai.com/he/services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yourwai.com/en/services"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourwai.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://yourwai.com/he/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yourwai.com/en/contact"/>
+    <priority>0.9</priority>
+  </url>
+</urlset>

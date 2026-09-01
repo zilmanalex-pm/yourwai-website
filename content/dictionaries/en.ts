@@ -27,6 +27,11 @@ const en = {
 
   // ── Homepage sections ──
 
+  audience: {
+    heading: "Who this is for",
+    body: "You run a small practice or firm — psychology, accounting, law, beauty and wellness, consulting — with one to three people on the team. You're great at what you do, but half your day disappears into admin, scheduling, and email. You know AI is out there, but you don't have the time or headspace to figure out where to start. That's where I come in.",
+  },
+
   hero: {
     headline: "Connecting people and technology",
     subheadline:
@@ -39,7 +44,7 @@ const en = {
     eyebrow: "",
     headline: "",
     paragraphs: [
-      "I know what it's like when the day ends and you still haven't gotten to the work that actually matters. Sixteen years of organizational consulting taught me that the problem is almost never the technology. It's the processes. AI is simply the most powerful tool I have today to fix them.",
+      "I'm Alexandra Zilman, and I know what it's like when the day ends and you still haven't gotten to the work that actually matters. Sixteen years of organizational consulting taught me that the problem is almost never the technology. It's the processes. AI is simply the most powerful tool I have today to fix them.",
     ],
     cta: "More about me",
   },
@@ -254,6 +259,11 @@ const en = {
             "Your LinkedIn profile and CV are often someone's first encounter with you. I help make sure they reflect who you really are: professional, clear, and well designed. Profile optimization, resume writing, and positioning that works.",
         },
       ],
+    },
+    outcome: {
+      heading: "What changes after working together",
+      body: "Your next Tuesday looks different. The report that used to take three hours — done in thirty minutes. The meeting summary that always slipped through the cracks — sent to the client before you're back at your desk. The proposal you rebuilt from scratch every time — now one click.",
+      shift: "But the real change isn't in the tools. It's in the feeling. You walk away with something that works, you know exactly how to use it, and you're less afraid of the technology. Clarity, competence, confidence — in that order.",
     },
     aiUseCases: {
       headline: "What can you easily do with AI?",

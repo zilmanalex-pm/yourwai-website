@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/Card";
 import { FadeInSection } from "@/components/ui/FadeInSection";
 import { SectionDivider } from "@/components/decorative/SectionDivider";
 import { AiUseCasesGrid } from "@/components/sections/AiUseCasesGrid";
+import { OutcomeSection } from "@/components/sections/OutcomeSection";
 
 interface PageProps {
   params: Promise<{ locale: string }>;
@@ -130,6 +131,15 @@ export default async function ServicesPage({ params }: PageProps) {
         </div>
         </FadeInSection>
       </section>
+
+      <SectionDivider />
+
+      {/* What changes after working together */}
+      <OutcomeSection
+        heading={t("servicesPage.outcome.heading")}
+        body={t("servicesPage.outcome.body")}
+        shift={t("servicesPage.outcome.shift")}
+      />
 
       <SectionDivider />
 
