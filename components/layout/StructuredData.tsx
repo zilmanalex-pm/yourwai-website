@@ -15,12 +15,12 @@ export function StructuredData({ locale }: StructuredDataProps) {
   const localBusiness = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://yourwai.com/#business",
+    "@id": "https://yourwai-website-alexzilman-s-projects.vercel.app/#business",
     name: "YourwAI",
     description: isHe
       ? "ייעוץ AI לעסקים קטנים — ניתוח תהליכי עבודה, בניית כלי AI מותאמים, הדרכות"
       : "AI consulting for small businesses — work process analysis, custom AI tools, training",
-    url: `https://yourwai.com/${locale}`,
+    url: `https://yourwai-website-alexzilman-s-projects.vercel.app/${locale}`,
     telephone: "+972-54-546-4305",
     email: "zilman.alex@gmail.com",
     address: {
@@ -38,7 +38,7 @@ export function StructuredData({ locale }: StructuredDataProps) {
       },
       geoRadius: "50000", // ~50km radius covering central Israel + Sharon
     },
-    founder: { "@id": "https://yourwai.com/#person" },
+    founder: { "@id": "https://yourwai-website-alexzilman-s-projects.vercel.app/#person" },
     inLanguage: [locale],
     knowsLanguage: ["he", "en", "ru"],
     serviceType: [
@@ -54,11 +54,11 @@ export function StructuredData({ locale }: StructuredDataProps) {
   const person = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://yourwai.com/#person",
+    "@id": "https://yourwai-website-alexzilman-s-projects.vercel.app/#person",
     name: isHe ? "אלכסנדרה זילמן" : "Alexandra Zilman",
     jobTitle: isHe ? "יועצת AI ומומחית תהליכים ארגוניים" : "AI Consultant & Organizational Process Expert",
-    worksFor: { "@id": "https://yourwai.com/#business" },
-    url: `https://yourwai.com/${locale}/about`,
+    worksFor: { "@id": "https://yourwai-website-alexzilman-s-projects.vercel.app/#business" },
+    url: `https://yourwai-website-alexzilman-s-projects.vercel.app/${locale}/about`,
     knowsAbout: [
       "Artificial Intelligence",
       "Organizational Consulting",

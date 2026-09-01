@@ -4,7 +4,7 @@ import Script from "next/script";
  * Plausible Analytics — technical-decisions.md:
  * "Privacy-friendly, no cookie-consent banner required."
  *
- * TODO: Replace YOURWAI_DOMAIN with actual domain after purchase.
+ * Interim: using Vercel URL until custom domain is purchased.
  */
 export function PlausibleAnalytics() {
   // Only load in production
@@ -13,7 +13,7 @@ export function PlausibleAnalytics() {
   return (
     <Script
       defer
-      data-domain="YOURWAI_DOMAIN"
+      data-domain="yourwai-website-alexzilman-s-projects.vercel.app"
       src="https://plausible.io/js/script.js"
       strategy="afterInteractive"
     />

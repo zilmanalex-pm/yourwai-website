@@ -48,9 +48,12 @@ Home / About / Services / Contact. No blog, no separate FAQ route at launch.
 - No separate config file needed
 - All YourwAI design tokens (colors, typography, spacing, radii, shadows, breakpoints) are in `app/globals.css`
 
-## Domain — TBD
+## Domain — INTERIM
 
-Not yet chosen/purchased. Needed before Sprint 6 (deployment) but not before.
+Custom domain not yet purchased. Site is live at the interim Vercel URL:
+`https://yourwai-website-alexzilman-s-projects.vercel.app`
+
+All code references (metadata, sitemap, robots, structured data, Plausible analytics) currently point to this URL. When a custom domain is purchased, update: `lib/metadata.ts`, `app/sitemap.ts`, `app/robots.ts`, `components/layout/StructuredData.tsx`, and `components/layout/PlausibleAnalytics.tsx`.
 
 ## Content source — note, not a decision
 
@@ -59,4 +62,4 @@ There is no separate polished-copy document. Page copy is drafted from product-b
 ## Open questions
 
 - Domain name/registrar
-- Whether testimonials exist yet for TestimonialsSection (per product-brain.md client-voice section — confirm before Sprint 3)
+- ~~Whether testimonials exist yet for TestimonialsSection~~ — RESOLVED: 3 testimonials activated on the About page (Yukie Yoshida, Adam Kaye, Yerael Oshrat)

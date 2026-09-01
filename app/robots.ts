@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://yourwai.com/sitemap.xml",
+    sitemap: "https://yourwai-website-alexzilman-s-projects.vercel.app/sitemap.xml",
   };
 }

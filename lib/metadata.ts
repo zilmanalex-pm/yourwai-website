@@ -7,7 +7,7 @@ import type { Metadata } from "next";
  * TODO: Replace placeholder OG image path with actual image after design.
  */
 
-const SITE_URL = "https://yourwai.com"; // Update after domain is chosen
+const SITE_URL = "https://yourwai-website-alexzilman-s-projects.vercel.app"; // Interim Vercel URL — update after domain purchase
 
 export function getBaseMetadata(locale: string): Metadata {
   const isHe = locale === "he";
@@ -37,7 +37,7 @@ export function getBaseMetadata(locale: string): Metadata {
       siteName: "YourwAI",
       images: [
         {
-          url: "/images/og-default.jpg", // TODO: create OG image
+          url: "/images/og-default.jpg",
           width: 1200,
           height: 630,
           alt: isHe

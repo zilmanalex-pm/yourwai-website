@@ -87,7 +87,7 @@ const en = {
       { value: "16+", label: "years of organizational consulting" },
       { value: "5+", label: "years in B2B product management" },
       { value: "2,000+", label: "users onboarded" },
-      { value: "5x", label: "faster workflows" },
+      { value: "30%", label: "faster workflows" },
       { value: "3", label: "languages: Hebrew, English, Russian" },
     ],
   },

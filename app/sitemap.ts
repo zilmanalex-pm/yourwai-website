@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://yourwai.com";
+const BASE_URL = "https://yourwai-website-alexzilman-s-projects.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const locales = ["he", "en"] as const;
