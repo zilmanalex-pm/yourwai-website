@@ -2,15 +2,15 @@ import { FadeInSection } from "@/components/ui/FadeInSection";
 
 interface AudienceSectionProps {
   heading: string;
-  body: string;
+  body1: string;
+  body2: string;
 }
 
 /**
- * "Who this is for" — short paragraph section between Hero and TrustBar.
+ * "Who this is for" — two-paragraph section between Hero and TrustBar.
  * Visually lighter than the hero, uses surface background for differentiation.
- * No cards or lists — a single direct address to the visitor.
  */
-export function AudienceSection({ heading, body }: AudienceSectionProps) {
+export function AudienceSection({ heading, body1, body2 }: AudienceSectionProps) {
   return (
     <section className="section-alt py-3xl lg:py-4xl px-xl">
       <FadeInSection>
@@ -19,7 +19,10 @@ export function AudienceSection({ heading, body }: AudienceSectionProps) {
             {heading}
           </h2>
           <p className="text-body-lg font-light text-text leading-relaxed">
-            {body}
+            {body1}
+          </p>
+          <p className="text-body-lg font-light text-text leading-relaxed mt-md">
+            {body2}
           </p>
         </div>
       </FadeInSection>

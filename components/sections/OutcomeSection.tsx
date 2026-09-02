@@ -2,16 +2,23 @@ import { FadeInSection } from "@/components/ui/FadeInSection";
 
 interface OutcomeSectionProps {
   heading: string;
-  body: string;
-  shift: string;
+  intro: string;
+  transition: string;
+  items: string[];
+  closing: string;
 }
 
 /**
  * "What changes after working together" — closing section on Services page.
- * Two visual beats: concrete wins (body) + emotional payoff (shift).
- * The shift text is set apart with more spacing above and slightly smaller type.
+ * Intro line, transition word, 3-item list of concrete wins, closing line.
  */
-export function OutcomeSection({ heading, body, shift }: OutcomeSectionProps) {
+export function OutcomeSection({
+  heading,
+  intro,
+  transition,
+  items,
+  closing,
+}: OutcomeSectionProps) {
   return (
     <section className="py-3xl lg:py-4xl px-xl">
       <FadeInSection>
@@ -20,10 +27,23 @@ export function OutcomeSection({ heading, body, shift }: OutcomeSectionProps) {
             {heading}
           </h2>
           <p className="text-body-lg font-light text-text leading-relaxed">
-            {body}
+            {intro}
           </p>
-          <p className="text-body font-light text-text-muted mt-xl leading-relaxed">
-            {shift}
+          <p className="text-body-lg font-heading font-medium text-primary-dark mt-lg mb-md">
+            {transition}
+          </p>
+          <ul className="space-y-sm">
+            {items.map((item, i) => (
+              <li
+                key={i}
+                className="text-body font-light text-text leading-relaxed ps-md relative before:content-['–'] before:absolute before:start-0 before:text-accent-dark"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p className="text-body-lg font-light text-text mt-xl leading-relaxed">
+            {closing}
           </p>
         </div>
       </FadeInSection>

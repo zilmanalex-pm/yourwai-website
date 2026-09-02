@@ -137,8 +137,10 @@ export default async function ServicesPage({ params }: PageProps) {
       {/* What changes after working together */}
       <OutcomeSection
         heading={t("servicesPage.outcome.heading")}
-        body={t("servicesPage.outcome.body")}
-        shift={t("servicesPage.outcome.shift")}
+        intro={t("servicesPage.outcome.intro")}
+        transition={t("servicesPage.outcome.transition")}
+        items={[0, 1, 2].map((i) => t(`servicesPage.outcome.items.${i}`))}
+        closing={t("servicesPage.outcome.closing")}
       />
 
       <SectionDivider />

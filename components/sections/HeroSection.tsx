@@ -1,19 +1,20 @@
 import Image from "next/image";
 
 interface HeroSectionProps {
+  name: string;
   headline: string;
   subheadline: string;
-  byline: string;
   locale: "he" | "en";
 }
 
 /**
  * Homepage hero — text + portrait, no botanical.
+ * Name is the prominent element; headline is secondary.
  */
 export function HeroSection({
+  name,
   headline,
   subheadline,
-  byline,
   locale,
 }: HeroSectionProps) {
   return (
@@ -22,13 +23,13 @@ export function HeroSection({
         {/* Text */}
         <div className="flex-1 flex flex-col gap-xl">
           <h1 className="text-h1 font-heading font-semibold text-primary leading-[1.2] tracking-[-0.02em]">
-            {headline}
+            {name}
           </h1>
+          <p className="text-h3 font-heading font-medium text-primary-dark leading-snug">
+            {headline}
+          </p>
           <p className="text-body-lg font-light text-text max-w-[540px]">
             {subheadline}
-          </p>
-          <p className="text-caption font-light text-text-muted tracking-wide">
-            {byline}
           </p>
         </div>
 

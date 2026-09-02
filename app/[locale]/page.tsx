@@ -21,9 +21,9 @@ export default async function HomePage({ params }: PageProps) {
   return (
     <>
       <HeroSection
+        name={t("hero.name")}
         headline={t("hero.headline")}
         subheadline={t("hero.subheadline")}
-        byline={t("hero.byline")}
         locale={loc}
       />
 
@@ -31,7 +31,8 @@ export default async function HomePage({ params }: PageProps) {
 
       <AudienceSection
         heading={t("audience.heading")}
-        body={t("audience.body")}
+        body1={t("audience.body1")}
+        body2={t("audience.body2")}
       />
 
       <SectionDivider />

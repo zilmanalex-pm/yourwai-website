@@ -28,16 +28,17 @@ const en = {
   // ── Homepage sections ──
 
   audience: {
-    heading: "Who this is for",
-    body: "You run a small practice or firm — psychology, accounting, law, beauty and wellness, consulting — with one to three people on the team. You're great at what you do, but half your day disappears into admin, scheduling, and email. You know AI is out there, but you don't have the time or headspace to figure out where to start. That's where I come in.",
+    heading: "Who is this for?",
+    body1: "Small business owners with lean teams—such as psychology practices, accounting firms, clinics, law offices, beauty and aesthetics studios, consulting firms, and more.",
+    body2: "You love your profession and excel at what you do, yet half your day is consumed by administration, scheduling, paperwork, invoicing, and emails. I am here to help you build tools that handle this work for you.",
   },
 
   hero: {
+    name: "Alexandra Zilman",
     headline: "Connecting people and technology",
     subheadline:
       "You don't need to become an AI expert. You need someone who understands your workflows and builds the right tools for them.",
     cta: "Get in touch",
-    byline: "Alexandra Zilman · AI Adoption Consultant",
     photoAlt: "Alexandra Zilman, AI adoption consultant",
   },
 
@@ -262,9 +263,15 @@ const en = {
       ],
     },
     outcome: {
-      heading: "What changes after working together",
-      body: "Your next Tuesday looks different. The report that used to take three hours — done in thirty minutes. The meeting summary that always slipped through the cracks — sent to the client before you're back at your desk. The proposal you rebuilt from scratch every time — now one click.",
-      shift: "But the real change isn't in the tools. It's in the feeling. You walk away with something that works, you know exactly how to use it, and you're less afraid of the technology. Clarity, competence, confidence — in that order.",
+      heading: "What changes after we work together?",
+      intro: "You'll have effective tools at your disposal and know exactly how to use them.",
+      transition: "And then...",
+      items: [
+        "A report that used to take three hours will be ready in just thirty minutes.",
+        "Meeting summaries, the ones you never have the energy to write, will be generated automatically and sent to the client.",
+        "Price quotes that previously required building from scratch every time will now be ready at the click of a button.",
+      ],
+      closing: "And most importantly: you can devote more time to what you love doing, rather than getting bogged down by everything else.",
     },
     aiUseCases: {
       headline: "What can you easily do with AI?",
