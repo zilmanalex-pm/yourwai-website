@@ -90,7 +90,7 @@ export default async function ContactPage({ params }: PageProps) {
                 href={t("contactPage.direct.whatsapp.href")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-md p-lg bg-white border border-border rounded-md no-underline shadow-subtle hover:shadow-rose-lg hover:-translate-y-[5px] transition-all duration-300"
+                className="flex items-center gap-md p-lg bg-white border border-border border-s-[3px] border-s-accent rounded-md no-underline shadow-subtle hover:shadow-rose-lg hover:-translate-y-1 transition-all duration-300"
               >
                 <WhatsAppIcon className="w-8 h-8 flex-shrink-0" />
                 <div>
@@ -106,7 +106,7 @@ export default async function ContactPage({ params }: PageProps) {
               {/* Phone */}
               <a
                 href={t("contactPage.direct.phone.href")}
-                className="flex items-center gap-md p-lg bg-white border border-border rounded-md no-underline shadow-subtle hover:shadow-rose-lg hover:-translate-y-[5px] transition-all duration-300"
+                className="flex items-center gap-md p-lg bg-white border border-border border-s-[3px] border-s-accent rounded-md no-underline shadow-subtle hover:shadow-rose-lg hover:-translate-y-1 transition-all duration-300"
               >
                 <Phone className="w-8 h-8 flex-shrink-0 text-primary" strokeWidth={1.5} />
                 <div>
@@ -122,7 +122,7 @@ export default async function ContactPage({ params }: PageProps) {
               {/* Email */}
               <a
                 href={t("contactPage.direct.email.href")}
-                className="flex items-center gap-md p-lg bg-white border border-border rounded-md no-underline shadow-subtle hover:shadow-rose-lg hover:-translate-y-[5px] transition-all duration-300"
+                className="flex items-center gap-md p-lg bg-white border border-border border-s-[3px] border-s-accent rounded-md no-underline shadow-subtle hover:shadow-rose-lg hover:-translate-y-1 transition-all duration-300"
               >
                 <Mail className="w-8 h-8 flex-shrink-0 text-primary" strokeWidth={1.5} />
                 <div>

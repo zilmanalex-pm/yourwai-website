@@ -9,10 +9,9 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {
 /**
  * Card component — design-rules.md §5
  *
- * Default: white bg, 1px border, 16px radius, 32px padding.
- * Right-side partial accent line via ::after pseudo-element (60% height).
- * Hover: lift -5px + enhanced rose shadow (300ms).
- * Testimonial: + 3px left border in dusty rose.
+ * Default: white bg, 1px border, 16px radius, 32px padding,
+ * 3px start-side rose accent border for visual consistency.
+ * Hover: lift -4px + enhanced rose shadow (300ms).
  */
 export function Card({
   className,
@@ -24,12 +23,9 @@ export function Card({
     <div
       className={cn(
         "relative bg-white border border-border rounded-lg p-xl",
-        "shadow-subtle hover:shadow-rose-lg hover:-translate-y-[5px]",
+        "border-s-[3px] border-s-accent",
+        "shadow-subtle hover:shadow-rose-lg hover:-translate-y-1",
         "transition-all duration-300 ease-out",
-        // Partial right accent line via pseudo-element
-        "after:content-[''] after:absolute after:end-0 after:top-[20%] after:h-[40%] after:w-[4px] after:bg-accent after:rounded-full",
-        variant === "testimonial" &&
-          "border-s-[3px] border-s-accent",
         className
       )}
       {...props}

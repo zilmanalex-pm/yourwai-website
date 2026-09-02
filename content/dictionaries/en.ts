@@ -35,7 +35,7 @@ const en = {
 
   hero: {
     name: "Alexandra Zilman",
-    headline: "Connecting people and technology",
+    headline: "AI Adoption & Custom Workflows for Small Businesses",
     subheadline:
       "You don't need to become an AI expert. You need someone who understands your workflows and builds the right tools for them.",
     cta: "Get in touch",

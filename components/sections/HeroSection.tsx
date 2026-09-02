@@ -9,7 +9,7 @@ interface HeroSectionProps {
 
 /**
  * Homepage hero — text + portrait, no botanical.
- * Name is the prominent element; headline is secondary.
+ * Name is a small eyebrow label; headline is the primary h1.
  */
 export function HeroSection({
   name,
@@ -21,13 +21,13 @@ export function HeroSection({
     <section className="py-3xl lg:py-4xl px-xl relative overflow-hidden">
       <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center gap-3xl relative z-10">
         {/* Text */}
-        <div className="flex-1 flex flex-col gap-xl">
-          <h1 className="text-h1 font-heading font-semibold text-primary leading-[1.2] tracking-[-0.02em]">
+        <div className="flex-1 flex flex-col gap-lg">
+          <p className="text-caption font-medium text-primary-dark uppercase tracking-[0.08em]">
             {name}
-          </h1>
-          <p className="text-h3 font-heading font-medium text-primary-dark leading-snug">
-            {headline}
           </p>
+          <h1 className="text-h1 font-heading font-semibold text-primary leading-[1.2] tracking-[-0.02em]">
+            {headline}
+          </h1>
           <p className="text-body-lg font-light text-text max-w-[540px]">
             {subheadline}
           </p>

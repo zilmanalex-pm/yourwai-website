@@ -35,7 +35,7 @@ export function ProcessSection({ headline, steps, alt }: ProcessSectionProps) {
                 <div className="hidden lg:block absolute top-7 start-[calc(50%+32px)] w-[calc(100%-64px)] h-[2px] bg-accent/30" />
               )}
               <p className="text-body font-medium text-text">{step.label}</p>
-              <p className="text-body font-light text-text-muted mt-xs max-w-[200px]">
+              <p className="text-body font-light text-text mt-xs max-w-[200px]">
                 {step.description}
               </p>
             </div>

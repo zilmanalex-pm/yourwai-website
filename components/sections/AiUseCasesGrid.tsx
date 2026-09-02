@@ -51,7 +51,7 @@ export function AiUseCasesGrid({
           <h2 className="text-h2 font-heading font-semibold text-primary-dark mb-sm text-center">
             {headline}
           </h2>
-          <p className="text-body font-light text-text-muted text-center mb-2xl max-w-[600px] mx-auto">
+          <p className="text-body font-light text-text text-center mb-2xl max-w-[600px] mx-auto">
             {subtitle}
           </p>
 
@@ -61,10 +61,10 @@ export function AiUseCasesGrid({
               return (
                 <div
                   key={i}
-                  className="flex flex-col items-center text-center p-xl bg-white border border-border rounded-lg shadow-subtle hover:shadow-rose-lg hover:-translate-y-[3px] transition-all duration-300"
+                  className="flex flex-col items-center text-center p-xl bg-white border border-border border-s-[3px] border-s-accent rounded-lg shadow-subtle hover:shadow-rose-lg hover:-translate-y-1 transition-all duration-300"
                 >
                   <div className="w-12 h-12 rounded-full bg-accent/15 flex items-center justify-center mb-md">
-                    <Icon className="w-6 h-6" style={{ color: "#b07070" }} strokeWidth={1.5} />
+                    <Icon className="w-6 h-6 text-primary-dark" strokeWidth={1.5} />
                   </div>
                   <p className="text-body font-medium text-text leading-snug">
                     {item}

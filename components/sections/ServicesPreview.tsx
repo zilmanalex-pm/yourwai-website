@@ -1,8 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Search, Wrench, GraduationCap, Globe, Linkedin } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { FadeInSection } from "@/components/ui/FadeInSection";
+
+const serviceIcons = [Search, Wrench, GraduationCap, Globe, Linkedin];
 
 interface ServiceItem {
   readonly title: string;
@@ -16,31 +19,6 @@ interface ServicesPreviewProps {
   ctaLabel: string;
   ctaHref: string;
   alt?: boolean;
-}
-
-/** Inline dust-pink flower icon */
-function FlowerIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      width="28"
-      height="28"
-      viewBox="0 0 28 28"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      aria-hidden="true"
-    >
-      <circle cx="14" cy="14" r="4" fill="#c88a8a" />
-      <ellipse cx="14" cy="6" rx="3.5" ry="5" fill="#c88a8a" opacity="0.6" />
-      <ellipse cx="14" cy="22" rx="3.5" ry="5" fill="#c88a8a" opacity="0.6" />
-      <ellipse cx="6" cy="14" rx="5" ry="3.5" fill="#c88a8a" opacity="0.6" />
-      <ellipse cx="22" cy="14" rx="5" ry="3.5" fill="#c88a8a" opacity="0.6" />
-      <ellipse cx="8.3" cy="8.3" rx="3.5" ry="5" fill="#c88a8a" opacity="0.5" transform="rotate(-45 8.3 8.3)" />
-      <ellipse cx="19.7" cy="19.7" rx="3.5" ry="5" fill="#c88a8a" opacity="0.5" transform="rotate(-45 19.7 19.7)" />
-      <ellipse cx="19.7" cy="8.3" rx="3.5" ry="5" fill="#c88a8a" opacity="0.5" transform="rotate(45 19.7 8.3)" />
-      <ellipse cx="8.3" cy="19.7" rx="3.5" ry="5" fill="#c88a8a" opacity="0.5" transform="rotate(45 8.3 19.7)" />
-    </svg>
-  );
 }
 
 /**
@@ -87,9 +65,13 @@ export function ServicesPreview({
 
         {/* All services in one row on desktop, narrower boxes */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-lg justify-items-center">
-          {items.map((item, i) => (
+          {items.map((item, i) => {
+            const Icon = serviceIcons[i] ?? Search;
+            return (
             <Card key={i} className="w-full relative z-10">
-              <FlowerIcon className="mb-sm" />
+              <div className="w-10 h-10 rounded-full bg-surface flex items-center justify-center mb-sm">
+                <Icon className="w-5 h-5 text-primary-dark" strokeWidth={1.5} />
+              </div>
               <h3 className="text-body font-heading font-medium text-text mb-xs">
                 {item.title}
               </h3>
@@ -97,7 +79,8 @@ export function ServicesPreview({
                 {item.description}
               </p>
             </Card>
-          ))}
+            );
+          })}
         </div>
 
         <div className="mt-xl text-center">

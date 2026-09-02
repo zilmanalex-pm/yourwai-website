@@ -49,7 +49,7 @@ export function ValuesSection({ headline, items }: ValuesSectionProps) {
             <h4 className="text-h4 font-heading font-medium text-text mb-xs">
               {item.title}
             </h4>
-            <p className="text-body font-light text-text-muted">
+            <p className="text-body font-light text-text">
               {item.description}
             </p>
           </Card>

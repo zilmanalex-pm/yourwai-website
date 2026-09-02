@@ -21,9 +21,9 @@ export function TrustBar({ items }: TrustBarProps) {
   return (
     <section className="section-alt py-3xl lg:py-4xl px-xl">
       <FadeInSection>
-        <div className="max-w-[1200px] mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-xl sm:gap-2xl lg:gap-3xl justify-items-center">
+        <div className="max-w-[1200px] mx-auto flex flex-wrap justify-center divide-x divide-border">
           {items.map((item, i) => (
-            <div key={i} className="text-center">
+            <div key={i} className="text-center px-xl sm:px-2xl lg:px-3xl py-sm">
               {item.value ? (
                 <>
                   <p className="text-h2 font-heading font-semibold text-primary-dark">

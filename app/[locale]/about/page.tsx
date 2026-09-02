@@ -39,7 +39,7 @@ export default async function AboutPage({ params }: PageProps) {
       {/* Hero / Intro */}
       <section className="py-3xl lg:py-4xl px-xl">
         <div className="max-w-[800px] mx-auto flex flex-col gap-lg">
-          <h1 className="text-h2 font-heading font-semibold text-primary">
+          <h1 className="text-h1 font-heading font-semibold text-primary">
             {t("about.headline")}
           </h1>
         </div>
@@ -51,7 +51,7 @@ export default async function AboutPage({ params }: PageProps) {
       <section className="section-alt py-3xl lg:py-4xl px-xl relative overflow-hidden">
         {/* Blooming crocus — metaphor for unlocking potential */}
         <div
-          className="hidden lg:block absolute bottom-0 end-[3%] z-0 pointer-events-none select-none opacity-85"
+          className="hidden lg:block absolute bottom-0 end-0 z-0 pointer-events-none select-none opacity-85"
           aria-hidden="true"
           style={{ animation: "gentle-drift 5s ease-in-out infinite" }}
         >
@@ -99,9 +99,9 @@ export default async function AboutPage({ params }: PageProps) {
 
       {/* Credentials & Values — potted plant near education/consulting */}
       <section className="section-alt py-3xl lg:py-4xl px-xl relative overflow-hidden">
-        {/* Secondary potted plant — near professional background */}
+        {/* Secondary potted plant — right side near professional background */}
         <div
-          className="hidden lg:block absolute bottom-0 end-0 -me-2 z-0 pointer-events-none select-none opacity-85"
+          className="hidden lg:block absolute bottom-0 right-0 -mr-2 z-0 pointer-events-none select-none opacity-85"
           aria-hidden="true"
           style={{ animation: "gentle-drift 7s ease-in-out infinite" }}
         >
