@@ -46,7 +46,7 @@ export function Header({ locale }: HeaderProps) {
       )}
       dir={dir}
     >
-      <div className="max-w-[1200px] mx-auto px-xl flex items-center justify-between h-[72px]">
+      <div className="max-w-[1200px] mx-auto px-xl flex items-center justify-between h-[80px]">
         {/* ── Zone 1: Logo (start-aligned) ── */}
         <Link
           href={`/${locale}`}
@@ -56,9 +56,9 @@ export function Header({ locale }: HeaderProps) {
           <Image
             src="/images/logo.png"
             alt="YourwAI"
-            width={220}
-            height={73}
-            className="h-[68px] w-auto"
+            width={260}
+            height={86}
+            className="h-[76px] w-auto"
             priority
           />
         </Link>

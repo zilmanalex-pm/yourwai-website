@@ -22,7 +22,7 @@ export function HeroSection({
       <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center gap-3xl relative z-10">
         {/* Text */}
         <div className="flex-1 flex flex-col gap-lg">
-          <p className="text-caption font-medium text-primary-dark uppercase tracking-[0.08em]">
+          <p className="text-xl font-semibold text-primary-dark uppercase tracking-[0.08em]">
             {name}
           </p>
           <h1 className="text-h1 font-heading font-semibold text-primary leading-[1.2] tracking-[-0.02em]">

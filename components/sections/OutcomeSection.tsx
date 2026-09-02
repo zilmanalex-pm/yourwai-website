@@ -32,12 +32,13 @@ export function OutcomeSection({
           <p className="text-body-lg font-heading font-medium text-primary-dark mt-lg mb-md">
             {transition}
           </p>
-          <ul className="space-y-sm">
+          <ul className="space-y-md">
             {items.map((item, i) => (
               <li
                 key={i}
-                className="text-body font-light text-text leading-relaxed ps-md relative before:content-['–'] before:absolute before:start-0 before:text-accent-dark"
+                className="flex items-start gap-sm text-body font-light text-text leading-relaxed"
               >
+                <span className="mt-[8px] w-2 h-2 rounded-full bg-accent flex-shrink-0" aria-hidden="true" />
                 {item}
               </li>
             ))}

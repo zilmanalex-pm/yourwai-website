@@ -39,7 +39,7 @@ export default async function AboutPage({ params }: PageProps) {
       {/* Hero / Intro */}
       <section className="py-3xl lg:py-4xl px-xl">
         <div className="max-w-[800px] mx-auto flex flex-col gap-lg">
-          <h1 className="text-h1 font-heading font-semibold text-primary">
+          <h1 className="text-h2 font-heading font-semibold text-primary">
             {t("about.headline")}
           </h1>
         </div>
@@ -67,7 +67,7 @@ export default async function AboutPage({ params }: PageProps) {
         </div>
 
         <FadeInSection>
-        <div className="max-w-[800px] mx-auto flex flex-col gap-lg relative z-10">
+        <div className="max-w-[800px] mx-auto flex flex-col gap-md relative z-10">
           {[0, 1, 2, 3, 4].map((i) => (
             <p key={i} className="text-body font-light text-text">
               {renderBold(t(`about.storyParagraphs.${i}`))}

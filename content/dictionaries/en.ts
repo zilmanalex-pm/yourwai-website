@@ -29,7 +29,7 @@ const en = {
 
   audience: {
     heading: "Who is this for?",
-    body1: "Small business owners with lean teams—such as psychology practices, accounting firms, clinics, law offices, beauty and aesthetics studios, consulting firms, and more.",
+    body1: "Small business owners with lean teams, such as psychology practices, accounting firms, clinics, law offices, beauty and aesthetics studios, consulting firms, and more.",
     body2: "You love your profession and excel at what you do, yet half your day is consumed by administration, scheduling, paperwork, invoicing, and emails. I am here to help you build tools that handle this work for you.",
   },
 
@@ -193,7 +193,7 @@ const en = {
           category: "Organizational consulting",
           detail: "16 years, Israel's public sector (government & municipal). Process analysis, OPEX, group facilitation, training materials development.",
         },
-        { category: "Education", detail: "MA Organizational Behavior · BA Psychology & Sociology" },
+        { category: "Education", detail: "Master's in Organizational Behavior · Bachelor's in Psychology & Sociology" },
       ],
     },
     values: {
