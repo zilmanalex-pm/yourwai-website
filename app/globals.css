@@ -123,13 +123,16 @@
   }
 }
 
-/* Subtle botanical image drift — "breathing" effect */
+/* Botanical image drift — organic sway with vertical + slight rotation */
 @keyframes gentle-drift {
   0%, 100% {
-    transform: translateY(0);
+    transform: translateY(0) rotate(0deg);
   }
-  50% {
-    transform: translateY(-3px);
+  33% {
+    transform: translateY(-7px) rotate(1.5deg);
+  }
+  66% {
+    transform: translateY(-3px) rotate(-1deg);
   }
 }
 
