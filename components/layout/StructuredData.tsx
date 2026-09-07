@@ -1,3 +1,5 @@
+import { SITE_URL } from "@/lib/metadata";
+
 interface StructuredDataProps {
   locale: "he" | "en";
 }
@@ -15,12 +17,12 @@ export function StructuredData({ locale }: StructuredDataProps) {
   const localBusiness = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://yourwai-website-alexzilman-s-projects.vercel.app/#business",
+    "@id": `${SITE_URL}/#business`,
     name: "YourwAI",
     description: isHe
       ? "ייעוץ AI לעסקים קטנים — ניתוח תהליכי עבודה, בניית כלי AI מותאמים, הדרכות"
       : "AI consulting for small businesses — work process analysis, custom AI tools, training",
-    url: `https://yourwai-website-alexzilman-s-projects.vercel.app/${locale}`,
+    url: `${SITE_URL}/${locale}`,
     telephone: "+972-54-546-4305",
     email: "zilman.alex@gmail.com",
     address: {
@@ -38,7 +40,7 @@ export function StructuredData({ locale }: StructuredDataProps) {
       },
       geoRadius: "50000", // ~50km radius covering central Israel + Sharon
     },
-    founder: { "@id": "https://yourwai-website-alexzilman-s-projects.vercel.app/#person" },
+    founder: { "@id": `${SITE_URL}/#person` },
     inLanguage: [locale],
     knowsLanguage: ["he", "en", "ru"],
     serviceType: [
@@ -54,11 +56,11 @@ export function StructuredData({ locale }: StructuredDataProps) {
   const person = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://yourwai-website-alexzilman-s-projects.vercel.app/#person",
+    "@id": `${SITE_URL}/#person`,
     name: isHe ? "אלכסנדרה זילמן" : "Alexandra Zilman",
     jobTitle: isHe ? "יועצת AI ומומחית תהליכים ארגוניים" : "AI Consultant & Organizational Process Expert",
-    worksFor: { "@id": "https://yourwai-website-alexzilman-s-projects.vercel.app/#business" },
-    url: `https://yourwai-website-alexzilman-s-projects.vercel.app/${locale}/about`,
+    worksFor: { "@id": `${SITE_URL}/#business` },
+    url: `${SITE_URL}/${locale}/about`,
     knowsAbout: [
       "Artificial Intelligence",
       "Organizational Consulting",

@@ -13,7 +13,7 @@ export function PlausibleAnalytics() {
   return (
     <Script
       defer
-      data-domain="yourwai-website-alexzilman-s-projects.vercel.app"
+      data-domain="alex-zilman-yourwai.org"
       src="https://plausible.io/js/script.js"
       strategy="afterInteractive"
     />
