@@ -53,6 +53,9 @@ export function getBaseMetadata(locale: string): Metadata {
       index: true,
       follow: true,
     },
+    verification: {
+      google: "RbUcTdN_Y_Zn2yfXMa3TX-KlBB4MzBY-WISNDTnTv0s",
+    },
     other: {
       "format-detection": "telephone=no", // Prevent auto-linking phone numbers
     },
