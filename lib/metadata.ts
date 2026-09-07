@@ -37,7 +37,7 @@ export function getBaseMetadata(locale: string): Metadata {
       siteName: "YourwAI",
       images: [
         {
-          url: "/images/og-default.jpg",
+          url: isHe ? "/images/og-he.jpg" : "/images/og-en.jpg",
           width: 1200,
           height: 630,
           alt: isHe
