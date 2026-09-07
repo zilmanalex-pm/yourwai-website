@@ -8,6 +8,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { StructuredData } from "@/components/layout/StructuredData";
 import { PlausibleAnalytics } from "@/components/layout/PlausibleAnalytics";
+import { GoogleAnalytics } from "@/components/layout/GoogleAnalytics";
 import { routing } from "@/i18n/routing";
 import "@/app/globals.css";
 
@@ -63,6 +64,7 @@ export default async function LocaleLayout({
       <head>
         <StructuredData locale={locale as Locale} />
         <PlausibleAnalytics />
+        <GoogleAnalytics />
       </head>
       <body className="font-body text-body antialiased min-h-screen flex flex-col">
         <NextIntlClientProvider>
